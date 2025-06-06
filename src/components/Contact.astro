@@ -1,0 +1,41 @@
+---
+import MailIcon from "../icons/MailIcon.astro";
+import TelIcon from "../icons/TelIcon.astro";
+import LocationIcon from "../icons/LocationIcon.astro";
+
+import GitHubIcon from "../icons/GitHubIcon.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+---
+
+<section class="min-w-full flex flex-col gap-2">
+  <p class="text-green-400">
+    <span class="text-zinc-500">$</span> cat contact.txt
+  </p>
+
+  <div class="flex justify-between">
+    <span class="bg-black text-green-400 border border-green-400 cursor-pointer rounded-full w-fit flex items-center gap-2 px-2 hover:bg-green-400 hover:text-black transition-colors duration-500">
+      <MailIcon className="inline-block size-6 text-black stroke-green-400" />
+      software.project.zero@gmail.com
+    </span>
+    
+    <span class="bg-black text-green-400 border border-green-400 cursor-pointer rounded-full w-fit flex items-center gap-2 px-2 hover:bg-green-400 hover:text-black transition-colors duration-500">
+      <TelIcon className="inline-block size-6 text-black stroke-green-400" />
+      +57 300 346 6295
+    </span>
+    
+    <span class="bg-black text-green-400 border border-green-400 cursor-pointer rounded-full w-fit flex items-center gap-2 px-2 hover:bg-green-400 hover:text-black transition-colors duration-500">
+      <LocationIcon className="inline-block size-6 text-black stroke-green-400" />
+      Armenia, Quindío, Colombia
+    </span>
+  </div>
+  <div class="flex justify-between">
+    <button class="group cursor-pointer flex justify-center items-center gap-2 p-2 border-green-400 border-1 bg-white rounded-lg hover:bg-green-400 hover:text-black transition duration-200">
+      <GitHubIcon className="inline-block size-6 text-black stroke-green-400 group-hover:stroke-black transition duration-200" />
+      <a class="text-green-400 group-hover:text-black transition duration-200" href="https://github.com/chrisladzamach" target="_blank">GitHub</a>
+    </button>
+    <button class="group cursor-pointer flex justify-center items-center gap-2 p-2 border-green-400 border-1 bg-white rounded-lg hover:bg-green-400 hover:text-black transition duration-200">
+      <LinkedInIcon className="inline-block size-6 text-white stroke-green-400 stroke-1 group-hover:stroke-black group-hover:text-green-400 transition duration-200" />
+      <a class="text-green-400 group-hover:text-black transition duration-200" href="https://www.linkedin.com/in/CsZa" target="_blank">LinkedIn</a>
+    </button>
+  </div>
+</section>
