@@ -15,7 +15,7 @@ interface Repo {
 
 <section class="pb-8 select-none">
   <a href="https://github.com/chrisladzamach?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-green-400 mb-4">
-    <span class="text-zinc-500">$</span> ls -la projects/
+    <span class="text-zinc-500">$</span> ls -la projects/<span class="text-green-400 blink">_</span>
   </a>
   <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 mt-4 overflow-y-auto overflow-x-hidden max-h-54 custom-scrollbar pr-2">
     {repos.map((repo: Repo) => (
@@ -44,3 +44,14 @@ interface Repo {
     ))}
   </section>
 </section>
+
+<style>
+  .blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+</style>

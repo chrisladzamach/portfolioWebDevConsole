@@ -9,7 +9,7 @@ import GitHubIcon from "../icons/GitHubIcon.astro";
 
 <section class="min-w-full flex flex-col gap-2 border-b-1 border-zinc-800 pb-8">
   <p class="text-green-400 mb-4">
-    <span class="text-zinc-500">$</span> cat contact.txt
+    <span class="text-zinc-500">$</span> cat contact.txt<span class="text-green-400 blink">_</span>
   </p>
 
   <div class="flex justify-between">
@@ -39,3 +39,14 @@ import GitHubIcon from "../icons/GitHubIcon.astro";
     </button>
   </div>
 </section>
+
+<style>
+  .blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+</style>
