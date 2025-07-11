@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redireccionar todas las rutas no encontradas a index.html para SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
